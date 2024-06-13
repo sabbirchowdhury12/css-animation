@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/15a52dd37b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo" id="logo">
+        <h1>LOGO</h1>
+      </div>
+      <div class="header-line">
+        <a class="open-menu-toggle" id="menuBar" href="#">
+          <i class="fa-solid fa-bars" style="color: #ffffff"></i>
+        </a>
+        <div class="social-line" id="social-line">
+          <ul class="social-list">
+            <li>
+              <a href="#"><i class="fab fa-facebook-square"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter-square"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="copyright-line">
+          <p>© Royarch 2021</p>
+        </div>
+        <nav class="nav-menu-box" id="nav-menu-box">
+          <ul class="navigation-menu-list">
+            <li class="menu-item-has-children">
+              <a href="index.html"
+                ><span><em>Home</em></span></a
+              >
+              <ul class="sub-menu" style="display: block">
+                <li><a href="index.html">Home 1</a></li>
+                <li><a href="home2.html">Home 2</a></li>
+                <li><a href="home3.html">Home 3</a></li>
+              </ul>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="portfolio.html"
+                ><span><em>Work</em></span></a
+              >
+            </li>
+            <li class="menu-item-has-children">
+              <a href="about.html"
+                ><span><em>About</em></span></a
+              >
+            </li>
+            <li class="menu-item-has-children active">
+              <a href="blog.html"
+                ><span><em>Blog</em></span></a
+              >
+            </li>
+            <li>
+              <a href="contact.html"
+                ><span><em>Contact</em></span></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="contact">
+        <i class="fa-solid fa-phone fa-beat" style="color: #ffffff"></i>
+        <span>+1 234 5678 90 00 royarch@domain.com</span>
+      </div>
+
+      <!-- Slider -->
+      <div class="container" id="container">
+        <div class="caption" id="slider-caption">
+          <div class="caption-heading">
+            <h1>Lorem Ipsum</h1>
+          </div>
+          <div class="caption-subhead">
+            <span>dolor sit amet, consectetur adipiscing elit.</span>
+          </div>
+          <a class="btn" href="#">Sit Amet</a>
+        </div>
+        <div class="left-col" id="left-col">
+          <div id="left-slider"></div>
+        </div>
+
+        <ul class="nav">
+          <i class="fa-solid fa-angle-left"></i>
+          <i id="down_button" class="fa-solid fa-angle-right"></i>
+        </ul>
+
+        <div class="count" id="count"></div>
+      </div>
+    </header>
+
+    <script src="script.js"></script>
+  </body>
+</html>
