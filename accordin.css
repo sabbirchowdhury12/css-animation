@@ -1,0 +1,93 @@
+:root {
+  --primary: #242424;
+  --secondary: #3d3d3d;
+  --btn: #d92828;
+  --border: rgba(255, 255, 255, 0.4);
+  --text: #ffffff;
+  --text-shadow: rgba(255, 255, 255, 0.8);
+}
+
+.accordin-section {
+  background-image: url("http://templates.fabric-lab.co/royarch/upload/about/service-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.accordion {
+  margin: 90px auto;
+  color: var(--text);
+  background-color: transparent;
+  padding: 45px 45px;
+  position: relative;
+}
+
+.accordion h1 {
+  margin-bottom: 2rem;
+}
+.accordion .accordion-container {
+  position: relative;
+  margin: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Positions the labels relative to the .accordion-container. Adds padding to the top and bottom and increases font size. Also makes its cursor a pointer */
+
+.accordion .label {
+  position: relative;
+  padding: 10px 0;
+  font-size: 2rem;
+  color: var(--text);
+  cursor: pointer;
+  width: 100%;
+}
+/* Positions the plus sign 5px from the right. Centers it using the transform property. */
+
+.accordion .label::before {
+  content: "+";
+  color: var(--text);
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  font-size: 30px;
+  transform: translateY(-50%);
+}
+
+/* Hides the content (height: 0), decreases font size, justifies text and adds transition */
+
+.accordion .content {
+  position: relative;
+  height: 0;
+  font-size: 20px;
+  text-align: justify;
+  width: 780px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+/* Adds a horizontal line between the contents */
+
+.accordion hr {
+  width: 100;
+  margin-left: 0;
+  border: 0.1rem solid var(--border);
+}
+
+.accordion .accordion-container.active .content {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+  padding: 2rem;
+}
+
+/* Changes from plus sign to negative sign once active */
+
+.accordion .accordion-container.active .label::before {
+  content: "-";
+  font-size: 30px;
+}

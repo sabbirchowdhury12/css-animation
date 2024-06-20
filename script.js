@@ -24,17 +24,17 @@ let slide_data = [
     copy: " ADIPISCING ELIT.",
   },
   {
-    src: "https://images.unsplash.com/photo-1496309732348-3627f3f040ee?ixlib=rb-0.3.5&s=4d04f3d5a488db4031d90f5a1fbba42d&auto=format&fit=crop&w=1050&q=80",
+    src: "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bmF0dXJlfGVufDB8fDB8fHww",
     title: "Slide 2",
     copy: "DOLOR SIT AMET, .",
   },
   {
-    src: "https://images.unsplash.com/photo-1504271863819-d279190bf871?ixlib=rb-0.3.5&s=7a2b986d405a04b3f9be2e56b2be40dc&auto=format&fit=crop&w=334&q=80",
+    src: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bmF0dXJlfGVufDB8fDB8fHww",
     title: "Slide 3",
     copy: "DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT.",
   },
   {
-    src: "https://images.unsplash.com/photo-1478728073286-db190d3d8ce6?ixlib=rb-0.3.5&s=87131a6b538ed72b25d9e0fc4bf8df5b&auto=format&fit=crop&w=1050&q=80",
+    src: "https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bmF0dXJlfGVufDB8fDB8fHww",
     title: "Slide 4",
     copy: "DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT.",
   },
@@ -176,4 +176,12 @@ function customFunction(event) {
   console.log("animation ended");
 
   // Do something when the transition ends
+}
+
+const accordion = document.getElementsByClassName("accordion-container");
+
+for (i = 0; i < accordion.length; i++) {
+  accordion[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+  });
 }
