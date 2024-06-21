@@ -43,9 +43,9 @@ let slide_data = [
 let slides = [],
   captions = [];
 
-// let autoplay = setInterval(function () {
-//   nextSlide();
-// }, 5000);
+let autoplay = setInterval(function () {
+  nextSlide();
+}, 5000);
 
 let container = document.getElementById("container");
 let leftSlider = document.getElementById("left-col");
@@ -184,4 +184,17 @@ for (i = 0; i < accordion.length; i++) {
   accordion[i].addEventListener("click", function () {
     this.classList.toggle("active");
   });
+}
+
+function myFunction() {
+  // Move loader before hiding it
+  const loader = document.getElementById("loader");
+
+  // Set timeout to hide loader and show main content
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
 }
